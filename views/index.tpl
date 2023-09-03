@@ -8,6 +8,8 @@
         <ul>
             {foreach $foods as $food}
                 <li>{$food}</li>
+            {foreachelse}
+                <li>{$name} has no favorite foods</li>
             {/foreach}
         </ul>
     </article>
